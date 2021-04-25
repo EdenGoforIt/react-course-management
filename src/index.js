@@ -5,4 +5,4 @@ function HelloWorld() {
   return <p>Hello wolrd</p>;
 }
 
-render(<HelloWorld></HelloWorld>, document.getElementById("app"));
+render(<HelloWorld />, document.getElementById("app"));
