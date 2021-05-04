@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import * as courseActions from "../redux/actions/courseActions";
-import * as authActions from "../redux/actions/authorActions";
+import * as courseActions from "../../redux/actions/courseActions";
+import * as authActions from "../../redux/actions/authorActions";
 import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import CourseList from "./CourseList";
