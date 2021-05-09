@@ -35,6 +35,8 @@ function ManageCoursePage({
       });
     }
   }, [props.course]);
+  //  [] will render once
+  //props.course will render each time the course state is changed
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -100,6 +102,8 @@ export function getCourseBySlug(courses, slug) {
 
 function mapStateToProps(state, ownProps) {
   const slug = ownProps.match.params.slug;
+
+  debugger;
   const course =
     slug && state.courses.length > 0
       ? getCourseBySlug(state.courses, slug)

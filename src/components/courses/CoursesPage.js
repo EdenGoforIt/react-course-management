@@ -26,7 +26,7 @@ class CoursesPage extends React.Component {
   };
 
   render() {
-    return ( 
+    return (
       <>
         {this.state.redirectToAddCoursePage && <Redirect to="/course" />}
         <h2>Courses</h2>
