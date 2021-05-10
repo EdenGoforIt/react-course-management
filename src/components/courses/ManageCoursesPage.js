@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import CourseForm from "./CourseForm";
 import { newCourse } from "../../../tools/mockData";
 import { toast } from "react-toastify";
+import Spinner from "../common/Spinner";
 
 function ManageCoursePage({
   courses,
@@ -74,7 +75,9 @@ function ManageCoursePage({
       });
   }
 
-  return (
+  return authors.length === 0 || courses.length === 0 ? (
+    <Spinner />
+  ) : (
     <CourseForm
       course={course}
       errors={errors}
@@ -103,7 +106,6 @@ export function getCourseBySlug(courses, slug) {
 function mapStateToProps(state, ownProps) {
   const slug = ownProps.match.params.slug;
 
-  debugger;
   const course =
     slug && state.courses.length > 0
       ? getCourseBySlug(state.courses, slug)
