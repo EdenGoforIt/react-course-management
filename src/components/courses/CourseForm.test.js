@@ -3,7 +3,7 @@ import CourseForm from "./CourseForm";
 import renderer from "react-test-renderer";
 import { courses, authors } from "../../../tools/mockData";
 
-it("Should show saving when the data is being saved", () => {
+it("Should show 'saving...' when the data is being saved", () => {
   const tree = renderer.create(
     <CourseForm
       course={courses[0]}
@@ -11,6 +11,19 @@ it("Should show saving when the data is being saved", () => {
       onSave={jest.fn()}
       onChange={jest.fn()}
       saving={true}
+    />
+  );
+  expect(tree).toMatchSnapshot();
+});
+
+it("Should show 'save' when the data is being saved", () => {
+  const tree = renderer.create(
+    <CourseForm
+      course={courses[0]}
+      authors={authors}
+      onSave={jest.fn()}
+      onChange={jest.fn()}
+      saving={false}
     />
   );
   expect(tree).toMatchSnapshot();
