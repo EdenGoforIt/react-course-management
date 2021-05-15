@@ -8,14 +8,14 @@
 :white_check_mark: Functional Component <br>
 :white_check_mark: Hook <br>
 :white_check_mark: Test with Jest <br>
-✅: Test with React_Testing_Library <br>
-✅: Test with Enzyme <br>
-✅: Test Actions <br>
-✅: Test Redux <br>
-✅: Test HTML <br>
-✅: Test Thunk <br>
-✅: Eslint rules <br>
-✅: Web pack config rules <br>
+✅ Test with React_Testing_Library <br>
+✅ Test with Enzyme <br>
+✅ Test Actions <br>
+✅ Test Redux <br>
+✅ Test HTML <br>
+✅ Test Thunk <br>
+✅ Eslint rules <br>
+✅ Web pack config rules <br>
 
 
 
