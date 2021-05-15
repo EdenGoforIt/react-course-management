@@ -1,3 +1,24 @@
+##Features included
+
+:white_check_mark: Redux <br>
+:white_check_mark: Thunk <br>
+:white_check_mark: Redux <br>
+:white_large_square: Server Side Rendering <br>
+:white_check_mark: Class Component <br>
+:white_check_mark: Functional Component <br>
+:white_check_mark: Hook <br>
+:white_check_mark: Test with Jest <br>
+✅: Test with React_Testing_Library
+✅: Test with Enzyme
+✅: Test Actions
+✅: Test Redux
+✅: Test HTML
+✅: Test Thunk
+
+
+
+
+
 ## Get Started
 
 1. **Install [Node 8](https://nodejs.org)** or newer. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)(https://github.com/coryhouse/pluralsight-redux-starter/archive/master.zip)
