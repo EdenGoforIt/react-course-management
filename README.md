@@ -1,9 +1,9 @@
-##Features included
+## Features included
 
 :white_check_mark: Redux <br>
 :white_check_mark: Thunk <br>
 :white_check_mark: Redux <br>
-:white_large_square: Server Side Rendering <br>
+:white_large_square: Server Side Rendering With React.lzy + Suspense && Loadable Components <br>
 :white_check_mark: Class Component <br>
 :white_check_mark: Functional Component <br>
 :white_check_mark: Hook <br>
