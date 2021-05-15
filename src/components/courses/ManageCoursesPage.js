@@ -8,7 +8,7 @@ import { newCourse } from "../../../tools/mockData";
 import { toast } from "react-toastify";
 import Spinner from "../common/Spinner";
 
-function ManageCoursePage({
+export function ManageCoursePage({
   courses,
   authors,
   loadAuthors,
