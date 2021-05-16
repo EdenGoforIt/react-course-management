@@ -10,6 +10,9 @@ module.exports = {
   target: "web",
   devtool: "cheap-module-source-map",
   entry: "./src/index",
+  //server side rendering configuraiton
+  // ssrIndexJs: resolveApp("src/index.server.js"),
+  // ssrBuild: resolveApp("dist"),
   output: {
     path: path.resolve(__dirname, "build"),
     publicPath: "/",

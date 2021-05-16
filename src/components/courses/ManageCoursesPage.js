@@ -7,6 +7,8 @@ import CourseForm from "./CourseForm";
 import { newCourse } from "../../../tools/mockData";
 import { toast } from "react-toastify";
 import Spinner from "../common/Spinner";
+import { Preloader } from "../../lib/PreloadContext";
+import { getCourses } from "../../api/courseApi";
 
 export function ManageCoursePage({
   courses,
@@ -78,14 +80,17 @@ export function ManageCoursePage({
   return authors.length === 0 || courses.length === 0 ? (
     <Spinner />
   ) : (
-    <CourseForm
-      course={course}
-      errors={errors}
-      authors={authors}
-      onChange={handleChange}
-      onSave={handleSave}
-      saving={saving}
-    />
+    <>
+      <CourseForm
+        course={course}
+        errors={errors}
+        authors={authors}
+        onChange={handleChange}
+        onSave={handleSave}
+        saving={saving}
+      />
+      <Preloader resolve={(getCourses, loadAuthors)} />
+    </>
   );
 }
 
