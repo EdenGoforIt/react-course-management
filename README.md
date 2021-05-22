@@ -11,6 +11,8 @@
 ✅ Test with React_Testing_Library <br>
 ✅ Test with Enzyme <br>
 ✅ Test Actions <br>
+✅ Test Store (Integration between actions, reducers and store) <br>
+✅ Test Actions <br>
 ✅ Test Redux <br>
 ✅ Test HTML <br>
 ✅ Test Thunk <br>
